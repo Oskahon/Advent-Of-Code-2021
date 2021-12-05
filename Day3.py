@@ -34,8 +34,8 @@ def lest_common_bit(lines, pos):
 
 # part 1
 def part1(positions):
-    gamma = '0b'
-    epsilon = '0b'
+    gamma = ''
+    epsilon = ''
 
     for i, value in enumerate(positions[0]):
         bit = most_common_bit(positions, i)
@@ -74,9 +74,7 @@ def part2(positions):
     print('Part 2:')
     print(f'Oxygen: {o}')
     print(f'CO2: {c}')
-    o = '0b' + o[0]
-    c = '0b' + c[0]
-    print(int(o, 2) * int(c, 2))
+    print(int(o[0], 2) * int(c[0], 2))
 
 if __name__ == '__main__':
     main()
